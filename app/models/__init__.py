@@ -6,3 +6,4 @@ from .musician import Musician
 from .person import Person
 from .runner import Runner
 from .shirt import Shirt
+from .topping import Topping
