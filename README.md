@@ -39,8 +39,15 @@ python3 manage.py runserver
 127.0.0.1:8000
 ```
 
-- Flake8
+- flake8
 
 ```bash
 python3 -m flake8
+```
+
+- isort
+
+```bash
+python3 -m isort .
+python3 -m isort . --check
 ```
