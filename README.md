@@ -38,3 +38,9 @@ python3 manage.py runserver
 ```bash
 127.0.0.1:8000
 ```
+
+- Flake8
+
+```bash
+python3 -m flake8
+```
