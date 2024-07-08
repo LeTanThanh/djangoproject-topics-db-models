@@ -14,3 +14,27 @@ source .venv/bin/activate
 ```bash
 python3 -m pip install -r requirements.txt
 ```
+
+- Make migrations
+
+```bash
+python3 manage.py makemigrations
+```
+
+- Run migrations
+
+```bash
+python3 manage.py migrate
+```
+
+- Run server
+
+```bash
+python3 manage.py runserver
+```
+
+- Open web
+
+```bash
+127.0.0.1:8000
+```
