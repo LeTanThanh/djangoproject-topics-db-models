@@ -1,4 +1,5 @@
 from .album import Album
+from .car import Car
 from .fruit import Fruit
 from .manufacturer import Manufacturer
 from .musician import Musician
