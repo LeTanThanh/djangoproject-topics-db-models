@@ -1,5 +1,6 @@
 [flake8]
 exclude =
-  .venv,
-  app/models/__init__.py
+    .venv,
+    app/models/__init__.py,
+    app/migrations
 max-line-length = 120
