@@ -6,7 +6,8 @@ from django.db.models import (
 class Album(Model):
     artist = ForeignKey(
         'app.Musician',
-        on_delete=CASCADE
+        on_delete=CASCADE,
+        related_name='albums'
     )
     name = CharField(max_length=100)
     release_date = DateField()
