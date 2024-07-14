@@ -6,6 +6,6 @@ class MusicianFactory(DjangoModelFactory):
     class Meta:
         model = 'app.Musician'
 
-    first_name = Faker('first_name')
-    last_name = Faker('last_name')
-    instrument = Faker('word')
+    first_name = Faker(provider='first_name')
+    last_name = Faker(provider='last_name')
+    instrument = Faker(provider='word')
