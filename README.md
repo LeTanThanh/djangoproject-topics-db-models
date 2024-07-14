@@ -55,5 +55,11 @@ python3 -m isort . --check
 - pytest
 
 ```bash
-python3 -m pytest
+python3 -m pytest --cov
+```
+
+- pytest-cov
+
+```bash
+python3 -m coverage html
 ```
