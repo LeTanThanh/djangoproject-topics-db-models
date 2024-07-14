@@ -51,3 +51,9 @@ python3 -m flake8
 python3 -m isort .
 python3 -m isort . --check
 ```
+
+- pytest
+
+```bash
+python3 -m pytest
+```
