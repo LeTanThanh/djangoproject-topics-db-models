@@ -6,6 +6,7 @@ from django.test import TestCase
 
 from app.factories.album_factory import AlbumFactory
 from app.factories.musician_factory import MusicianFactory
+from app.models.album import Album
 
 
 class TestAlbum(TestCase):
@@ -25,6 +26,15 @@ class TestAlbum(TestCase):
         album = AlbumFactory.create(artist=musician)
 
         assert album.artist == musician
+
+    def test_artist_on_delete(self):
+        musician = MusicianFactory.create()
+        album = AlbumFactory.create(artist=musician)
+
+        musician.delete()
+
+        with pytest.raises(Album.DoesNotExist):
+            album.refresh_from_db()
 
     def test_artist_related_name(self):
         musician = MusicianFactory.create()
