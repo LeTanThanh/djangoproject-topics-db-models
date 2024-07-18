@@ -3,4 +3,5 @@ exclude =
     .venv,
     app/models/__init__.py,
     app/migrations
+    manage.py
 max-line-length = 120

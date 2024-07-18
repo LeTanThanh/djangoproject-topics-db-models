@@ -4,6 +4,7 @@ Django==5.0.6
 factory-boy==3.3.0
 Faker==26.0.0
 flake8==7.1.0
+flake8-quotes==3.4.0
 iniconfig==2.0.0
 isort==5.13.2
 mccabe==0.7.0
@@ -15,5 +16,6 @@ pytest==8.2.2
 pytest-cov==5.0.0
 pytest-django==4.8.0
 python-dateutil==2.9.0.post0
+setuptools==71.0.1
 six==1.16.0
 sqlparse==0.5.0
